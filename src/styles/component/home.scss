@@ -1,0 +1,94 @@
+$background_gradient: linear-gradient(-135deg,#c850c0,#4158d0);
+$btn_green: #57b846;
+
+$white: #fff;
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    background: $background_gradient;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    background: $white;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.login-pic {
+    width: 316px;
+    height: 102px;
+    background: linear-gradient(-120deg,#000000,#860218);
+    will-change: transform;
+    transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+}
+
+.login-container{
+    width: 290px;
+    margin: auto;
+}
+
+.login-heading {
+    display: block;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    width:100%;
+    padding-bottom: 54px;
+}
+
+.login-form input {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0px 30px;
+    outline: none;
+    border: none;
+
+}
+
+.btn-login {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login-form-btn:hover {
+    background: #333;
+    color: $white
+}
+
+.login-form-btn {
+    font-weight: bold;
+    display: flex;
+    font-size: 15px;
+    line-height: 1.5;
+    color: $white;
+    background: $btn_green;
+    width: 100%;
+    border-radius: 25px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    height: 50px;
+}

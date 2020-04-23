@@ -1,6 +1,9 @@
 import {combineReducers} from 'redux'
+import {reducer as formReducer} from 'redux-form'
+import authReducer from './auth'
 
-const replaceMe = () => null;
+
 export default combineReducers({
-    replaceMe
-})
+    auth: authReducer,
+    form: formReducer,
+});

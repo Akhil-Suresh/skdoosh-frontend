@@ -1,17 +1,18 @@
+import { BrowserRouter } from 'react-router-dom';
+import Dashboard from '../components/dashboard'
+import DashboardRoute from './dashboard'
+import Home  from '../components/home'
+import HomeRoute from './home'
+import PrivateRoute from './common';
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom';
 
-import Signup from '../containers/Signup'
-
-
-const Routes = () => {   
-
-
+const Routes = () => {
+    debugger;
     return (
         <BrowserRouter>
-            <div className='container-fluid'>                
-                <Route path="/" exact component={Signup} />                
-            </div>
+            <PrivateRoute exact path='/' />
+            <HomeRoute exact path='/login' component={Home}/>            
+            <DashboardRoute exact path='/dashboard' component={Dashboard} />
         </BrowserRouter>
     )
 }

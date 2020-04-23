@@ -6,6 +6,9 @@ import {
 
 
 export default axios.create({
-    baseURL: `${BASE_URL}:${PORT}/`
+    baseURL: `${BASE_URL}:${PORT}/`,
+    headers: {
+        'Content-Type': 'application/json'
+    }
 });
 
